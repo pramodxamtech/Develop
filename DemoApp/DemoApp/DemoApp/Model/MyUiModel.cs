@@ -6,6 +6,9 @@ namespace DemoApp.Model
 {
     public class MyUiModel
     {
+        public MyUiModel()
+        {
 
+        }
     }
 }
