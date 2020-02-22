@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DemoApp.Model
 {
-    class MyUiModel
+    public class MyUiModel
     {
     }
 }

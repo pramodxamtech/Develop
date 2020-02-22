@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DemoApp.ViewModel
 {
-    class pageViewModel
+    public class pageViewModel
     {
     }
 }
