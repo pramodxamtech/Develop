@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DemoApp.Model
 {
-    public class MyUiModel
+    public class UiModel
     {
-        public MyUiModel()
+        public UiModel()
         {
 
         }
