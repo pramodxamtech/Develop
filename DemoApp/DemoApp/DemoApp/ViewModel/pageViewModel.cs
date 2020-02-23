@@ -9,6 +9,7 @@ namespace DemoApp.ViewModel
         public pageViewModel()
         {
 
+
         }
     }
 }
