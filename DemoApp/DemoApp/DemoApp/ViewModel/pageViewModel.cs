@@ -6,5 +6,9 @@ namespace DemoApp.ViewModel
 {
     public class pageViewModel
     {
+        public pageViewModel()
+        {
+
+        }
     }
 }
