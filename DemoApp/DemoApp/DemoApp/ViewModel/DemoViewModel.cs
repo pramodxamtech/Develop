@@ -6,5 +6,9 @@ namespace DemoApp.ViewModel
 {
     public class DemoViewModel
     {
+        public DemoViewModel()
+        {
+
+        }
     }
 }
