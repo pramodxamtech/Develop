@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="To-Do List"
+             x:Class="DatarynxApp.Views.ToDoList">
+
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="GreenCircle.png"/>
+        <ToolbarItem Text="      "/>
+        <ToolbarItem Text="      "/>
+        <ToolbarItem IconImageSource="Refresh.png" />
+        <ToolbarItem IconImageSource="Filter.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+            <ListView  x:Name="ListData" SeparatorVisibility="None"
+                   Margin="10"
+                   ItemsSource="{Binding DatarynxRecords}"
+                   HasUnevenRows="True">
+                <ListView.Header>
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0"
+                                         Orientation="Horizontal">
+                            <Label FontAttributes="Bold" 
+                                  Style="{StaticResource SmallLabel}"
+                                   VerticalOptions="Center"
+                                   Text="Sorted by"></Label>
+                            <Label FontSize="Medium" 
+                                   FontAttributes="Bold"
+                                   Text="BDD" VerticalOptions="Center"
+                                   TextColor="#59b8de"></Label>
+                            <ImageButton 
+                                Source="DropDown.png"
+                                VerticalOptions="Start"
+                                Scale="0.7" >
+                            </ImageButton>
+                        </StackLayout>
+                        <ImageButton Grid.Row="0" Grid.Column="1"
+                                     Source="QuestionMark.png" 
+                                     VerticalOptions="Start"
+                                     HorizontalOptions="End"
+                                     Scale="0.9" 
+                                     Margin="0,0,8,0"></ImageButton>
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="0,5,0,5" Padding="10" BackgroundColor="#edebeb" HeightRequest="150">
+                                <Grid VerticalOptions="FillAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="25"/>
+                                        <RowDefinition Height="20"/>
+                                        <RowDefinition Height="20"/>
+                                        <RowDefinition Height="20"/>
+                                        <RowDefinition Height="35"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="{Binding Image}"
+                                           Grid.Row="0" Grid.Column="1"                                            HorizontalOptions="End"></Image>
+                                    <Label TextColor="Gray" 
+                                           Style="{StaticResource SmallLabel}"  
+                                           Grid.Row="0" Grid.Column="0" 
+                                           Text="{Binding WeekNo}"></Label>
+                                    <Label TextColor="Gray" 
+                                           FontSize="Small" 
+                                           Style="{StaticResource MediumLabel}" 
+                                           Grid.Row="1" Grid.Column="0" 
+                                           Text="{Binding WeekDate}"></Label>
+                                    <Label  Style="{StaticResource MediumLabel}" 
+                                           Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"                        Text="{Binding StoreName}"></Label>
+                                    <Label Style="{StaticResource SmallLabel}" 
+                                           TextColor="Black" 
+                                           Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"                        Text="{Binding StoreAddress}"></Label>
+                                    <Label Style="{StaticResource SmallLabel}"                                     VerticalOptions="CenterAndExpand"  
+                                           Grid.Row="4" Grid.Column="0" 
+                                           Text="{Binding CodingType}"></Label>
+                                    <Button Text="Start Audit" 
+                                            Grid.Row="4" Grid.Column="1" 
+                                            IsVisible="{Binding IsVisible}"
+                                            HeightRequest="35"
+                                            WidthRequest="110"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="StartAndExpand"
+                                            BackgroundColor="#59b8de" FontAttributes="Bold"
+                                            TextColor="White" FontSize="13"
+                                            ></Button>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
