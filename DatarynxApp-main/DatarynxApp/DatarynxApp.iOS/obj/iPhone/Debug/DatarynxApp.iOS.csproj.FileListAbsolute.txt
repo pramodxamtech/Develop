@@ -1,0 +1,8 @@
+C:\Users\PRAMODPC\source\repos\DatarynxApp\DatarynxApp\DatarynxApp.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\PRAMODPC\source\repos\DatarynxApp\DatarynxApp\DatarynxApp.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\PRAMODPC\source\repos\DatarynxApp\DatarynxApp\DatarynxApp.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\PRAMODPC\source\repos\DatarynxApp\DatarynxApp\DatarynxApp.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\PRAMODPC\source\repos\DatarynxApp\DatarynxApp\DatarynxApp.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\PRAMODPC\source\repos\DatarynxApp\DatarynxApp\DatarynxApp.iOS\obj\iPhone\Debug\optimized\
+C:\Users\PRAMODPC\source\repos\DatarynxApp\DatarynxApp\DatarynxApp.iOS\obj\iPhone\Debug\DatarynxApp.iOS.csprojAssemblyReference.cache
+C:\Users\PRAMODPC\source\repos\DatarynxApp\DatarynxApp\DatarynxApp.iOS\obj\iPhone\Debug\DatarynxApp.iOS.csproj.CoreCompileInputs.cache

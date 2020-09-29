@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DatarynxApp.Views.MenuPage"
+             Title="Menu">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ImageStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="200"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout BackgroundColor="Black" VerticalOptions="FillAndExpand">
+        <Image Source="images.jpg" Style="{StaticResource ImageStyle}"></Image>
+        <ListView x:Name="ListViewMenu" BackgroundColor="White" VerticalOptions="StartAndExpand"
+                    HasUnevenRows="True">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>About</x:String>
+                    <x:String>LogOut</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="20,10,20,0" HeightRequest="40">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                        <Label FontSize="Medium" FontAttributes="Bold" TextColor="Black" Text="{Binding .}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

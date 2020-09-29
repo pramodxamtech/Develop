@@ -1,0 +1,27 @@
+[
+  {
+    "week-no": "wk35",
+    "week-date": "08-09",
+    "store-name": "34492783/NEW RANDOLPH STORE 0045",
+    "store-address": "630 3RD ST WEST,RANDOLPH AFB,TX,78150",
+    "coding-type": "Item Coding",
+    "Task-State": "Not Started"
+  },
+  {
+    "week-no": "wk35",
+    "week-date": "08-09",
+    "store-name": "24492783/NEW RANDOLPH STORE 0045",
+    "store-address": "530 3RD ST WEST,RANDOLPH AFB,TX,78150",
+    "coding-type": "Item Coding",
+    "Task-State": "Not Started"
+  },
+  {
+    "week-no": "wk36",
+    "week-date": "08-09",
+    "store-name": "14492783/NEW RANDOLPH STORE 0045",
+    "store-address": "430 3RD ST WEST RANDOLPH AFB,TX,78150",
+    "coding-type": "Item Coding",
+    "Task-State": "In-Progress"
+  }
+]
+
